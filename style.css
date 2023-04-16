@@ -116,7 +116,7 @@ ul {
     padding-top: 9em;
     align-items: center;
     width: 100vw;
-    background-image: url(./content/Fverde.jpg);
+    background-image: url(Fverde.jpg);
     background-size: cover;
     color: var(--cor);
 }
@@ -164,7 +164,7 @@ ul {
     padding: 10rem 2rem;
     width: 100vw;
     margin: auto;
-    background-image: url(./content/Fbranco.jpeg);
+    background-image: url(Fbranco.jpeg);
     background-position: center;
     background-size: cover;
     color: var(--cor4);
@@ -192,7 +192,7 @@ ul {
     text-align: center;
     width: 100vw;
     padding: 20rem;
-    background-image: url(./content/Froxo.jpg);
+    background-image: url(Froxo.jpg);
     background-position: center;
     background-size: cover;
     color: var(--cor);
