@@ -1,0 +1,289 @@
+/* configurações gerais ==============================================*/
+
+:root {
+    --cor: white;
+    --cor1: #97D4D7;
+    --cor2: #013B5D;
+    --cor3: #d2ace0;
+    --cor4: #9567ad;
+    --cor5: #fed7fe;
+    --cor6: rgb(244, 244, 198);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: 'Alexandria', 'Open Sans', sans-serif;
+}
+
+p {
+    text-align: justify;
+    margin-left: 4%;
+    margin-right: 4%;
+}
+
+h1,
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 6rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+@media (max-width: 75em) {
+    html {
+        font-size: 60%;
+    }
+}
+
+
+@media (max-width: 61.25em) {
+    html {
+        font-size: 58%;
+    }
+}
+
+
+@media (max-width: 28.75em) {
+    html {
+        font-size: 30%;
+    }
+}
+
+/* BARRA DE NAVEGAÇÃO - NAVBAR =====================================*/
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--cor3);
+    border-bottom: 2px solid var(--cor4);
+    z-index: 10;
+}
+
+ul {
+    display: flex;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 1.5rem;
+}
+
+.nav-list a {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 700;
+    padding: 1.5rem;
+    text-decoration: none;
+}
+
+.nav-list a:hover {
+    background: var(--cor1);
+    color: var(--cor2);
+    border-radius: 7%;
+}
+
+/* 1 seção - welcome-section ==================================== */
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 9em;
+    align-items: center;
+    width: 100vw;
+    background-image: url(./content/Fverde.jpg);
+    background-size: cover;
+    color: var(--cor);
+}
+
+
+/* foto jack */
+
+.fperf {
+    width: 20vw;
+    margin: 10px;
+    border-radius: 50%;
+    border: 6px solid var(--cor4);
+    background-color: var(--cor3);
+}
+
+#welcome-section>p {
+    padding: 15px;
+    font-size: 1.5em;
+}
+
+#welcome-section>h1 {
+    padding: 10px;
+}
+
+#welcome-section>h2 {
+    padding: 15px;
+    color: var(--cor4);
+}
+
+
+/* 2 seção - projects-section ===================================*/
+
+.projects-section p {
+    padding: 15px;
+    font-size: 1.5em;
+}
+
+.projects-section>h1 {
+    color: var(--cor1);
+    font-size: 5.5em;
+}
+
+.projects-section {
+    text-align: center;
+    padding: 10rem 2rem;
+    width: 100vw;
+    margin: auto;
+    background-image: url(./content/Fbranco.jpeg);
+    background-position: center;
+    background-size: cover;
+    color: var(--cor4);
+}
+
+#projects {
+    text-align: center;
+    padding: 10rem 2rem;
+}
+
+.projects-section-header {
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid var(--main-white);
+}
+
+
+/* 3 seção - contact =============================================*/
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    padding: 20rem;
+    background-image: url(./content/Froxo.jpg);
+    background-position: center;
+    background-size: cover;
+    color: var(--cor);
+}
+
+.contact-section-header>h2 {
+    font-size: 6rem;
+}
+
+.contact-section-header>p {
+    font-style: italic;
+    font-size: 3em;
+    text-align: center;
+    color: var(--cor);
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    max-width: 980px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:414px) {
+    .contact-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+.contact-links a{
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--cor2);
+}
+
+.contact-links a::before{
+    color: var(--cor2);
+}
+
+
+.contact-details {
+    font-size: 2.4rem;
+    transition: transform 0.3s ease-out;
+    font: bold;
+}
+
+.contact-details:hover {
+    transform: translateY(8px);
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+}
+
+.btn-show-all>i {
+    margin-left: 10px;
+    transform: translateX(0);
+    transition: transform 0.3s ease-out;
+}
+
+/* Footer */
+
+footer {
+    font-weight: 400;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.2rem;
+    margin: 0;
+    color: var(--cor);
+    background: var(--cor2);
+    border-top: 4px solid var(--cor4);
+    height: 9vh;
+}
+
+footer>p {
+    margin: 2em;
+    text-align: center;
+}
+
+footer i {
+    vertical-align: middle;
+}
+
+footer a {
+    text-decoration: none;
+    color:var(--cor1);
+}
