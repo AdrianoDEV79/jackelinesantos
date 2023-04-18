@@ -51,25 +51,7 @@ h2 {
     text-align: center;
 }
 
-@media (max-width: 75em) {
-    html {
-        font-size: 60%;
-    }
-}
 
-
-@media (max-width: 61.25em) {
-    html {
-        font-size: 58%;
-    }
-}
-
-
-@media (max-width: 28.75em) {
-    html {
-        font-size: 30%;
-    }
-}
 
 /* BARRA DE NAVEGAÇÃO - NAVBAR =====================================*/
 
@@ -79,7 +61,7 @@ h2 {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     background: var(--cor3);
     border-bottom: 2px solid var(--cor4);
     z-index: 10;
@@ -117,7 +99,8 @@ ul {
     padding-top: 9em;
     align-items: center;
     width: 100vw;
-    background-image: url(Fverde.jpg);
+    height: 100vh;
+    background-image: url(./content/Fverde.jpg);
     background-size: cover;
     color: var(--cor);
 }
@@ -126,7 +109,8 @@ ul {
 /* foto jack */
 
 .fperf {
-    width: 20vw;
+    width: 100%;
+    max-width:20vw;
     margin: 10px;
     border-radius: 50%;
     border: 6px solid var(--cor4);
@@ -164,8 +148,9 @@ ul {
     text-align: center;
     padding: 10rem 2rem;
     width: 100vw;
+    height: 100vh;
     margin: auto;
-    background-image: url(Fbranco.jpeg);
+    background-image: url(./content/Fbranco.jpeg);
     background-position: center;
     background-size: cover;
     color: var(--cor4);
@@ -192,8 +177,9 @@ ul {
     align-items: center;
     text-align: center;
     width: 100vw;
+    height: 90vh;
     padding: 15rem;
-    background-image: url(Froxo.jpg);
+    background-image: url(./content/Froxo.jpg);
     background-position: center;
     background-size: cover;
     color: var(--cor);
@@ -217,15 +203,6 @@ ul {
     max-width: 980px;
     margin-top: 4rem;
     flex-wrap: wrap;
-}
-
-@media screen and (max-width:414px) {
-    .contact-links {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
 }
 
 .contact-links a{
@@ -267,12 +244,12 @@ footer {
     font-weight: 400;
     display: flex;
     justify-content: space-evenly;
-    padding: 0.2rem;
     margin: 0;
     color: var(--cor);
     background: var(--cor2);
     border-top: 4px solid var(--cor4);
-    height: 9vh;
+    width: 100vw;
+
 }
 
 footer>p {
@@ -288,3 +265,115 @@ footer a {
     text-decoration: none;
     color:var(--cor1);
 }
+
+
+/* Midias */
+
+@media (max-width: 75em) {
+    html {
+        font-size: 60%;
+    }
+}
+
+
+@media (max-width: 61.25em) {
+    html {
+        font-size: 58%;
+    }
+}
+
+
+@media (max-width: 28.75em) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width:1064px) {
+
+    .fperf {
+        width: 100%;
+        max-width:22vw;
+    }
+}
+
+@media (max-width:425px) {
+
+    .contact-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+
+    .fperf {
+        width: 100%;
+        max-width: 35vw;
+    }
+
+    #welcome-section>h1 {
+        font-size: 4.5em;
+    }
+
+    .contact-section-header>h2 {
+        font-size: 6em;
+    }
+}
+
+
+@media (max-width:375px) {
+   
+    .fperf {
+        width: 100%;
+        max-width:45vw;
+    }
+
+    .contact-section-header>h2 {
+        font-size: 4em;
+    }
+
+    #welcome-section>h1 {
+        font-size: 4em;
+    }
+    #welcome-section>h2 {
+        font-size: 2em;
+        padding: 7px;
+    }
+    .projects-section>h1{
+        font-size: 4em;
+    }
+}
+
+@media (max-width:320px){
+    
+    .fperf {
+        width: 100%;
+        max-width:45vw;
+    }
+
+    .nav-list a{
+        font-size: 1.7em;
+    }
+
+    .contact-section-header>h2 {
+        font-size: 4em;
+    }
+
+    #welcome-section>h1 {
+        font-size: 4em;
+    }
+    #welcome-section>h2 {
+        font-size: 2em;
+        padding: 7px;
+    }
+    .projects-section>h1{
+        font-size: 4em;
+    }
+
+}
+
+
+
+
+
