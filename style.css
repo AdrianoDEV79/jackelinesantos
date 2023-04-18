@@ -299,7 +299,7 @@ footer a {
 
 @media (max-width:425px) {
   #welcome-section {
-        background-image: url(./content/FverdeV.jpg);
+        background-image: url(FverdeV.jpg);
         background-size: cover;
 
     }
@@ -309,12 +309,12 @@ footer a {
     }
 
     .projects-section {
-        background-image: url(./content/FbrancoV.jpg);
+        background-image: url(FbrancoV.jpg);
         background-size: cover;    
     }
 
     .contact-section {
-        background-image: url(./content/FrovoV.jpg);
+        background-image: url(FrovoV.jpg);
         background-size: cover;
     }
 
