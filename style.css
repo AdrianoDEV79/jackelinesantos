@@ -100,7 +100,7 @@ ul {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-image: url(./content/Fverde.jpg);
+    background-image: url(Fverde.jpg);
     background-size: cover;
     color: var(--cor);
 }
@@ -150,7 +150,7 @@ ul {
     width: 100vw;
     height: 100vh;
     margin: auto;
-    background-image: url(./content/Fbranco.jpeg);
+    background-image: url(Fbranco.jpeg);
     background-position: center;
     background-size: cover;
     color: var(--cor4);
@@ -179,7 +179,7 @@ ul {
     width: 100vw;
     height: 90vh;
     padding: 15rem;
-    background-image: url(./content/Froxo.jpg);
+    background-image: url(Froxo.jpg);
     background-position: center;
     background-size: cover;
     color: var(--cor);
@@ -298,6 +298,25 @@ footer a {
 }
 
 @media (max-width:425px) {
+  #welcome-section {
+        background-image: url(./content/FverdeV.jpg);
+        background-size: cover;
+
+    }
+
+    #welcome-section>h1 {
+        font-size: 4.5em;
+    }
+
+    .projects-section {
+        background-image: url(./content/FbrancoV.jpg);
+        background-size: cover;    
+    }
+
+    .contact-section {
+        background-image: url(./content/FrovoV.jpg);
+        background-size: cover;
+    }
 
     .contact-links {
         display: flex;
@@ -312,9 +331,7 @@ footer a {
         max-width: 35vw;
     }
 
-    #welcome-section>h1 {
-        font-size: 4.5em;
-    }
+
 
     .contact-section-header>h2 {
         font-size: 6em;
