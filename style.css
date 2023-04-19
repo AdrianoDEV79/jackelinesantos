@@ -90,7 +90,7 @@ ul {
 }
 
 .nav-list a:hover {
-   
+
     background: var(--cor1);
     color: var(--cor2);
     border-radius: 7%;
@@ -101,9 +101,9 @@ ul {
 #welcome-section {
     display: flex;
     flex-direction: column;
-    padding-top: 9em;
+    padding-top: 8em;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-image: url(Fverde.jpg);
     background-size: cover;
@@ -148,29 +148,25 @@ ul {
 
 .projects-section>h1 {
     color: var(--cor1);
+    padding: 0.3em;
     font-size: 5.5em;
 }
 
 .projects-section {
     text-align: center;
-    padding: 10rem 2rem;
-    width: 100vw;
+    padding-top: 9em;
+    width: 100%;
     height: 100vh;
-    margin: auto;
     background-image: url(Fbranco.jpeg);
     background-position: center;
     background-size: cover;
     color: var(--cor4);
 }
 
-#projects {
-    text-align: center;
-    padding: 10rem 2rem;
-}
 
 .projects-section-header {
     max-width: 640px;
-    margin: 0 auto 6rem auto;
+    margin: 0 auto 5rem auto;
     border-bottom: 0.2rem solid var(--main-white);
 }
 
@@ -183,7 +179,7 @@ ul {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100vw;
+    width: 100%;
     height: 90vh;
     padding: 15rem;
     background-image: url(Froxo.jpg);
@@ -255,7 +251,7 @@ footer {
     color: var(--cor);
     background: var(--cor2);
     border-top: 4px solid var(--cor4);
-    width: 100vw;
+    width: 100%;
 
 }
 
@@ -309,7 +305,7 @@ footer a {
 
 
     #welcome-section {
-        
+
         background-image: url(FverdeV.jpg);
         background-size: cover;
 
@@ -321,7 +317,10 @@ footer a {
 
     .projects-section {
         background-image: url(FbrancoV.jpg);
-        background-size: cover;    
+        background-size: cover;
+    }
+    .projects-section>h1 {
+        font-size: 5em;
     }
 
     .contact-section {
@@ -343,9 +342,8 @@ footer a {
     }
 
 
-
     .contact-section-header>h2 {
-        font-size: 6em;
+        font-size: 5em;
     }
 }
 
@@ -370,7 +368,7 @@ footer a {
         font-size: 4em;
     }
 
-    
+
     .contact-section-header>h2 {
         font-size: 3.7em;
     }
@@ -378,7 +376,7 @@ footer a {
 
 @media (max-width:320px) {
 
-    .nav{
+    .nav {
         justify-content: center;
         text-align: center;
         height: 8vh;
@@ -386,11 +384,11 @@ footer a {
     }
 
     .nav-list {
-        margin:0; 
+        margin: 0;
     }
 
 
-    #welcome-section{
+    #welcome-section {
         padding-top: 7em;
     }
 
@@ -418,7 +416,7 @@ footer a {
     }
 
     .projects-section p {
-        padding: 0;
+        padding: 5px;
     }
 
     .contact-section-header>h2 {
