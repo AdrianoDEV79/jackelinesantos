@@ -103,7 +103,7 @@ ul {
     flex-direction: column;
     padding-top: 9em;
     align-items: center;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-image: url(Fverde.jpg);
     background-size: cover;
@@ -154,7 +154,7 @@ ul {
 .projects-section {
     text-align: center;
     padding: 10rem 2rem;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     margin: auto;
     background-image: url(Fbranco.jpeg);
@@ -183,7 +183,7 @@ ul {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100vw;
+    width: 100%;
     height: 90vh;
     padding: 15rem;
     background-image: url(Froxo.jpg);
