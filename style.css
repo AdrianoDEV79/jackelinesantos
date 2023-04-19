@@ -315,10 +315,18 @@ footer a {
         font-size: 4.5em;
     }
 
+    #welcome-section>p {
+        padding-left: 7px;
+        padding-right: 7px;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
     .projects-section {
         background-image: url(FbrancoV.jpg);
         background-size: cover;
     }
+
     .projects-section>h1 {
         font-size: 5em;
     }
@@ -379,7 +387,7 @@ footer a {
     .nav {
         justify-content: center;
         text-align: center;
-        height: 8vh;
+        height: 7vh;
         padding: 0;
     }
 
@@ -395,7 +403,7 @@ footer a {
     .fperf {
 
         width: 100%;
-        max-width: 45vw;
+        max-width: 40vw;
     }
 
     .nav-list a {
@@ -403,11 +411,11 @@ footer a {
     }
 
     #welcome-section>h1 {
-        font-size: 3.7em;
+        font-size: 3.5em;
     }
 
     #welcome-section>h2 {
-        font-size: 2em;
+        font-size: 1.7em;
         padding: 7px;
     }
 
