@@ -32,8 +32,8 @@ html {
 p {
     text-align: justify;
     text-justify: inter-word;
-    margin-left: 4%;
-    margin-right: 4%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 h1,
@@ -65,7 +65,7 @@ h2 {
     left: 0;
     padding: 5px;
     width: 100vw;
-    height: 8%;
+    height: 9.5%;
     background: var(--cor3);
     border-bottom: 2px solid var(--cor4);
     z-index: 10;
