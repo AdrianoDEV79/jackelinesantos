@@ -31,6 +31,7 @@ html {
 
 p {
     text-align: justify;
+    text-justify: inter-word;
     margin-left: 4%;
     margin-right: 4%;
 }
@@ -59,9 +60,12 @@ h2 {
     display: flex;
     justify-content: flex-end;
     position: fixed;
+    align-items: center;
     top: 0;
     left: 0;
+    padding: 5px;
     width: 100vw;
+    height: 8%;
     background: var(--cor3);
     border-bottom: 2px solid var(--cor4);
     z-index: 10;
@@ -86,6 +90,7 @@ ul {
 }
 
 .nav-list a:hover {
+   
     background: var(--cor1);
     color: var(--cor2);
     border-radius: 7%;
@@ -100,7 +105,7 @@ ul {
     align-items: center;
     width: 100vw;
     height: 100vh;
-    background-image: url(Fverde.jpg);
+    background-image: url(./content/Fverde.jpg);
     background-size: cover;
     color: var(--cor);
 }
@@ -110,7 +115,7 @@ ul {
 
 .fperf {
     width: 100%;
-    max-width:20vw;
+    max-width: 18vw;
     margin: 10px;
     border-radius: 50%;
     border: 6px solid var(--cor4);
@@ -118,9 +123,11 @@ ul {
 }
 
 #welcome-section>p {
-    padding: 15px;
+    padding-bottom: 1em;
     font-size: 1.5em;
 }
+
+
 
 #welcome-section>h1 {
     padding: 10px;
@@ -135,7 +142,7 @@ ul {
 /* 2 seção - projects-section ===================================*/
 
 .projects-section p {
-    padding: 15px;
+    padding: 0.7em;
     font-size: 1.5em;
 }
 
@@ -150,7 +157,7 @@ ul {
     width: 100vw;
     height: 100vh;
     margin: auto;
-    background-image: url(Fbranco.jpeg);
+    background-image: url(./content/Fbranco.jpeg);
     background-position: center;
     background-size: cover;
     color: var(--cor4);
@@ -179,7 +186,7 @@ ul {
     width: 100vw;
     height: 90vh;
     padding: 15rem;
-    background-image: url(Froxo.jpg);
+    background-image: url(./content/Froxo.jpg);
     background-position: center;
     background-size: cover;
     color: var(--cor);
@@ -205,13 +212,13 @@ ul {
     flex-wrap: wrap;
 }
 
-.contact-links a{
+.contact-links a {
     text-decoration: none;
     font-weight: 700;
     color: var(--cor2);
 }
 
-.contact-links a::before{
+.contact-links a::before {
     color: var(--cor2);
 }
 
@@ -263,11 +270,11 @@ footer i {
 
 footer a {
     text-decoration: none;
-    color:var(--cor1);
+    color: var(--cor1);
 }
 
 
-/* Midias */
+/* Midias ======================================================*/
 
 @media (max-width: 75em) {
     html {
@@ -293,13 +300,17 @@ footer a {
 
     .fperf {
         width: 100%;
-        max-width:22vw;
+        max-width: 22vw;
     }
 }
 
 @media (max-width:425px) {
-  #welcome-section {
-        background-image: url(FverdeV.jpg);
+
+
+
+    #welcome-section {
+        
+        background-image: url(./content/FverdeV.jpg);
         background-size: cover;
 
     }
@@ -309,12 +320,12 @@ footer a {
     }
 
     .projects-section {
-        background-image: url(FbrancoV.jpg);
+        background-image: url(./content/FbrancoV.jpg);
         background-size: cover;    
     }
 
     .contact-section {
-        background-image: url(FrovoV.jpg);
+        background-image: url(./content/FrovoV.jpg);
         background-size: cover;
     }
 
@@ -339,58 +350,79 @@ footer a {
 }
 
 
-@media (max-width:375px) {
-   
+@media (max-width:357px) {
+
     .fperf {
         width: 100%;
-        max-width:45vw;
-    }
-
-    .contact-section-header>h2 {
-        font-size: 4em;
+        max-width: 43vw;
     }
 
     #welcome-section>h1 {
-        font-size: 4em;
+        font-size: 3.7em;
     }
+
     #welcome-section>h2 {
-        font-size: 2em;
+        font-size: 1.7em;
         padding: 7px;
     }
-    .projects-section>h1{
+
+    .projects-section>h1 {
         font-size: 4em;
+    }
+
+    
+    .contact-section-header>h2 {
+        font-size: 3.7em;
     }
 }
 
-@media (max-width:320px){
-    
-    .fperf {
-        width: 100%;
-        max-width:45vw;
+@media (max-width:320px) {
+
+    .nav{
+        justify-content: center;
+        text-align: center;
+        height: 8vh;
+        padding: 0;
     }
 
-    .nav-list a{
+    .nav-list {
+        margin:0; 
+    }
+
+
+    #welcome-section{
+        padding-top: 7em;
+    }
+
+    .fperf {
+
+        width: 100%;
+        max-width: 45vw;
+    }
+
+    .nav-list a {
         font-size: 1.7em;
     }
 
-    .contact-section-header>h2 {
-        font-size: 4em;
+    #welcome-section>h1 {
+        font-size: 3.7em;
     }
 
-    #welcome-section>h1 {
-        font-size: 4em;
-    }
     #welcome-section>h2 {
         font-size: 2em;
         padding: 7px;
     }
-    .projects-section>h1{
+
+    .projects-section>h1 {
+        font-size: 4em;
+    }
+
+    .projects-section p {
+        padding: 0;
+    }
+
+    .contact-section-header>h2 {
         font-size: 4em;
     }
 
 }
-
-
-
-
-
